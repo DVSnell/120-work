@@ -33,7 +33,7 @@ If you don't trust random links, you can copy the link here:
 `[Microsoft Visual Academy's Getting Started with PowerShell course](https://mva.microsoft.com/en-us/training-courses/getting-started-with-powershell-3-0-jump-start-8276)`
 #### What issues did you help your fellow classmates out with this past homework cycle?
 
-I am currently waiting for issues to post that I can help tackle for this assignment and will update this readme as they occur.
+I have helped a couple students with basic Markdown formatting issues and some more common problems.  It seems we should reinforce the "Save, Commit, Push" and "Save Often!" mantras a bit more.
 
 ## Workspace Screenshot for hw-2
 ![hw-2 Editor Screenshot](./hw2-screenshot.jpg)
