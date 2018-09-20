@@ -1,6 +1,6 @@
 ## Don-Vincent Snell
 
-[First steps into a much larger world...](https://dvsnell.github.io/120-work/hw-4/)
+[Everyone wants a Drangom for a friend.](https://dvsnell.github.io/120-work/hw-4/)
 
 * This was a pretty straightforward assignment.  I found it fun to think of creative ways to problem solv.  Creating different shapes from the assorted tools was interesting. ![Preview in Action](./images/htmlpreview.jpg)
 
