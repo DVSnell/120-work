@@ -12,5 +12,5 @@ function setup(){
 function draw(){
 
     //Text function, centered on my background
-    text("Hello World!", 320, 240)
+    text("Hello World!", 320, 240);
 }
