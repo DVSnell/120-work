@@ -129,7 +129,7 @@ function draw(){
       stroke('rgb(190, 120, 1)');
       arc(0, -25, 40, 10, radians(180), radians(0));
 
-      arc(0, -20, 30, 7, radians(180), radians(0));
+      arc(0, -20, 30, 9, radians(180), radians(0));
 
       arc(0, -90, 18, 85, radians(180), radians(0));
 
