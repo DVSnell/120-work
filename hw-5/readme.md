@@ -1,6 +1,6 @@
 ## Don-Vincent Snell
 
-[Random Abstract Art Generator (v 0.1)](https://dvsnell.github.io/120-work/hw-4/)
+[Random Abstract Art Generator (v 0.1)](https://dvsnell.github.io/120-work/hw-5/)
 
 * I let myself research more complex systems and experimented a lot, but settled on a fairly simple creation for this assignment.  I've always loved procedural generators and abstract things like IFS fractals were the origin of my digital art creative career.  I felt it would be appropriate to make a little "art generator", great for decorating your upscale apartment (or dorm room).   ![Workspace](./images/h5screenshot.jpg)
 
