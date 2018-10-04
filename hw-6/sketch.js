@@ -39,7 +39,7 @@ let count = 0;
 function setup(){
     //Canvas creation command
     createCanvas(960, 960);
-    //Random background, but kept dark.
+    //Random background, but kept dark for visibility.
     background(random(25), random(25), random(25));
 }
 
