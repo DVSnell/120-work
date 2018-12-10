@@ -118,6 +118,7 @@ if (play === 1) {
 
   if (score >= (1000000000 / difficulty)) {
     conditions.victoryDisplay();
+    reUp();
     play = 0;
   }
 }
@@ -125,11 +126,13 @@ if (play === 1) {
 if (play === 2) {
   background(0);
   conditions.creditDisplay();
+  reUp();
 }
 
 if (play === 3) {
   background(0);
   conditions.crashDisplay();
+  reUp();
 }
 
 }
