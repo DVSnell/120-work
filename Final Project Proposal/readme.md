@@ -5,11 +5,11 @@
 I plan to create a game where the player, controlling a spaceship, must avoid/destroy asteroids while progressing to a planet.
 
 The Minimal Viable Product will have:
-* A controllable ship that can collide with and be destroyed by the asteroids.
-* Fireable weapons that, when colliding with asteroids destroys them.
-* A moving background.
+* A controllable ship that can collide with and be destroyed by the asteroids. (COMPLETE 12/08)
+* Fireable weapons that, when colliding with asteroids destroys them. (COMPLETE 12/08)
+* A moving background. (COMPLETE 12/08)
 * Background music.
-* Progress to destination tracker.
+* ~~Progress to destination tracker.~~ Merged with Score counter. (COMPLETE 12/09)
 
 Possible feature creep includes:
 * Sound effects.

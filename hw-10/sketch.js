@@ -23,7 +23,7 @@ function draw() {
   //First i initializes and second controls amount of starfield on screen.
   //Higher numbers increases starfield density.
   //Also makes the sky change from blue to black.
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 15; i++) {
     starfield.push(new star());
     bg.r -= 0.75;
     bg.g -= 0.75;
@@ -50,7 +50,7 @@ function star() {
   //on screen.
   this.pX = 0;
   this.pY = random(-100, 0);
-  this.scatter = int(sq(random(1, width / 2)));
+  this.scatter = int(sq(random(1, width / 0.5)));
 
   //Ties our motion rate for the position into a new nested function called time.
   this.motion = function(time) {
@@ -95,10 +95,12 @@ function star() {
 //A simple design for our rocketship, wrapped up in a function for ease.  Can
 // be transferred to a different file when we get to that level of coding.
 function rocketShip(){
+  let  rocketX = width / 2;
+  let  rocketY = height / 2;
     push();
 
     //Mouse Controller
-    translate(mouseX, mouseY);
+    translate(rocketX, rocketY);
 
     //Scale Correction
     scale(0.5, 0.5);
@@ -158,4 +160,7 @@ function rocketShip(){
     else {
       alp = random(0, 80);
     }
+    if ((keyIsPressed == true) && (key == 39)){
+      rocketX += 10;
   }
+}
