@@ -1,78 +1,54 @@
+//Lets make the player ship.
 class Rocket {
+
+//We establish some base parameters.  Nothing really out of the way here.
     constructor() {
-      this.alp = random(0, 80);
-      this.pX = constrain((width / 2), 50, 700);
+      this.pX = width / 2;
       this.pY = height / 1.25;
-      this.rS = 50;
-      this.rF = 190;
+      this.rS = 110;
+      this.rF = 40;
       this.strafe = 0;
       this.thrust = 0;
     }
 
+//Contains our ship to be drawn.
     display() {
-    translate(this.pX, this.pY);
-    //Scale Correction
-    scale(0.5, 0.5);
     push();
-    //Rocket Exhaust
-    noStroke();
-    fill(color(190, 53, 25, this.alp));
-    quad(0, 75, -40, 95, 0, 180, 40, 95);
-    pop();
-    push();
-    noStroke();
-    fill(color(255, 126, 0, this.alp));
-    quad(20, 80, -25, 100, 10, 150, 30, 110);
-    pop();
-    push();
-    noStroke();
-    scale(-1, 1);
-    fill(color(255, 126, 0, this.alp));
-    quad(20, 80, -25, 100, 10, 150, 30, 110);
-    pop();
-    push();
-    noStroke();
-    fill(color(255, 239, 0, this.alp));
-    quad(0, 85, -20, 110, -5, 130, 15, 100);
-    pop();
-    push();
-    noStroke();
-    scale(-1, 1);
-    fill(color(255, 239, 0, this.alp));
-    quad(0, 85, -20, 110, -5, 130, 15, 100);
-    pop();
-    //Rocket Body
-    push();
-    strokeWeight(4);
-    stroke(110);
-    fill(190);
-    quad(0, 0, -40, 100, 0, 80, 40, 100);
-    line(0, 50, 0, -120);
-    ellipse(0, 0, 50, 190);
-    ellipse(0, -120, 8, 8);
-    //Rocketship Windows
     strokeWeight(2);
-    fill(160, 255, 255);
-    ellipse(0, -60, 15, 15);
-    ellipse(0, -30, 25, 25);
-    ellipse(0, 0, 15, 15);
+    fill(180,180,255);
+    ellipse(this.pX-15, this.pY+12, 18, 15);
+    ellipse(this.pX+15, this.pY+12, 18, 15);
+    fill(100);
+    stroke(110);
+    rectMode(CENTER);
+    rect(this.pX+20, this.pY-10, 3, 20);
+    rect(this.pX-20, this.pY-10, 3, 20);
+    quad(this.pX, (this.pY-30), (this.pX+50), (this.pY+10), (this.pX), (this.pY+15), (this.pX-50), (this.pY+10));
+    strokeWeight(4);
+    line(this.pX, (this.pY+2), this.pX, (this.pY+18));
+    strokeWeight(2);
+    fill(50);
+    stroke(70);
+    ellipse(this.pX, this.pY-15, 7, 18);
     pop();
-    //Our Hit Box for collision detection.
+
+// //Our Hit Box for collision detection.
     push();
-    translate(-this.pX, -this.pY);
     strokeWeight(0);
-    fill(255,0,0);
+    fill(255,0,0,0);
     ellipse(this.pX , this.pY, this.rS, this.rF);
     pop();
     }
 
+//These receive input from the arrow keys...
     moveLR(m) {
       this.strafe = m;
     }
     moveUD(m) {
       this.thrust = m;
     }
-
+    
+//Which drives our motion deltas.
     motion(m) {
       this.pX += this.strafe * 10;
       this.pY += this.thrust * 10;

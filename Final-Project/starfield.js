@@ -1,15 +1,26 @@
+//Outback counting stars...
 class Stars {
-  constructor() {
+  constructor(startY) {
+
+//Spawns our initial set of stars.
+    if (startY == null) {
+      this.pY = int(random(-10, 0));
+    } else {
+      this.pY = startY;
+    }
+
+//Moves them at variable speeds and twinkles them.
     this.pX = int(random(10, 725));
-    this.pY = int(random(-700, 0));
     this.mY = random(0.1, 0.5);
   }
 
+//Contains our functions for easier reference.
   frame() {
     this.motion();
     this.display();
   }
 
+//Our actual star shapes.  A pair of quads was enough.
   display() {
     push();
     translate(this.pX, this.pY);
@@ -21,6 +32,7 @@ class Stars {
     pop();
   }
 
+//Make with the slow drop.
   motion() {
     this.pY += this.mY;
   }
